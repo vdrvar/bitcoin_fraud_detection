@@ -1,8 +1,8 @@
-# Bitcoin Fraud Detection
+# Fraud Detection in Bitcoin Transactions using Graph Neural Networks
 
 ---
 
-## **bitcoin_fraud_detection: Fraud Detection in Bitcoin Transactions using Graph Neural Networks**
+## **bitcoin_fraud_detection: **
 
 ---
 
