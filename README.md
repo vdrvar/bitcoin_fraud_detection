@@ -61,3 +61,64 @@ bitcoin_fraud_detection/
    make
    ./data_preprocessing
    ```
+
+#### Python Environment Setup
+1. **Install Python Dependencies**:
+   ```bash
+   cd model
+   pip install -r requirements.txt
+   ```
+2. **Required Libraries**:
+
+- torch
+- torch-geometric
+- pandas
+- matplotlib
+- scipy
+
+### Running the Project
+
+#### 1. Data Preprocessing (C++):
+
+Navigate to the src directory and run the data preprocessing script.
+```bash
+cd src/build
+./data_preprocessing
+```
+This will generate processed_graph.csv in the data directory.
+
+#### 2. Training the GNN Model (Python):
+
+Navigate to the model directory and run the GNN model script.
+```bash
+cd model
+python gnn_model.py
+```
+
+#### 3. Visualizing the Results (Python):
+
+Navigate to the visualization directory and run the visualization script.
+```bash
+cd visualization
+python visualize.py
+```
+
+### Usage
+
+- **Training**: The GNN model can be trained using the `gnn_model.py` script. Adjust hyperparameters as needed within the script.
+- **Visualization**: Use the `visualize.py` script to generate visualizations of the transaction graph and model performance metrics.
+
+### License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### Contributing
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
+
+### Acknowledgments
+- The Elliptic dataset: [Kaggle](https://www.kaggle.com/ellipticco/elliptic-data-set)
+- PyTorch Geometric: [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/)
+
+### Contact
+For any questions or suggestions, please open an issue or contact the project maintainers.
+
+
