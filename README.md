@@ -1,22 +1,62 @@
-# CryptoMLTrader: Machine Learning Crypto Trading Bot
+# Bitcoin Fraud Detection
 
-The `crypto_ml_trader` project integrates machine learning with cryptocurrency trading, employing Python and C++ to create a sophisticated trading bot. This bot aims to automate trading strategies, analyze market trends with machine learning algorithms, and execute trades quickly using C++ for efficiency. Designed for both newcomers and experienced traders, it seeks to provide a comprehensive toolset for informed trading decisions in the dynamic cryptocurrency market.
+---
 
-## Features
+## **bitcoin_fraud_detection: Fraud Detection in Bitcoin Transactions using Graph Neural Networks**
 
-- **Machine Learning for Market Analysis**: Utilizes Python's data analysis and machine learning capabilities to predict market trends and identify trading opportunities.
-- **Efficient Execution with C++**: Employs C++'s processing speed to execute trades swiftly, maximizing potential gains.
-- **Real-time Data Processing**: Analyzes real-time market data to make informed decisions quickly.
-- **User-Friendly Interface**: Offers an intuitive interface for setting up trading strategies and preferences.
+---
 
-## Getting Started
+### **Project Description**
+bitcoin_fraud_detection is a project aimed at detecting fraudulent Bitcoin transactions using Graph Neural Networks (GNNs). The project leverages the Elliptic dataset and combines the strengths of C++ for data preprocessing and Python for implementing and training the GNN model. This hybrid approach ensures efficient data handling and powerful machine learning capabilities.
 
-To get started with `crypto_ml_trader`, clone this repository and follow the setup instructions in the documentation. Ensure you have the required Python and C++ environments set up on your machine.
+---
 
-## Contributing
+### **Features**
+- **Data Preprocessing in C++**: Efficient parsing and cleaning of transaction data.
+- **Graph Construction**: Creation of a transaction graph using Boost.Graph.
+- **Graph Neural Network (GNN)**: Implementation of a GNN using PyTorch Geometric for fraud detection.
+- **Performance Optimization**: Integration of custom C++ operations for performance-critical tasks.
+- **Visualization**: Visualization of transaction graphs and model performance metrics.
 
-Contributions to `crypto_ml_trader` are welcome! Please refer to the contributing guidelines for more information on how to participate in the development.
+---
 
-## License
+### **Project Structure**
+```plaintext
+bitcoin_fraud_detection/
+│
+├── data/
+│   ├── elliptic_txs_classes.csv
+│   ├── elliptic_txs_edgelist.csv
+│   ├── elliptic_txs_features.csv
+│   └── processed_graph.csv
+│
+├── src/
+│   ├── data_preprocessing.cpp
+│   └── CMakeLists.txt
+│
+├── model/
+│   ├── gnn_model.py
+│   └── requirements.txt
+│
+├── visualization/
+│   └── visualize.py
+│
+├── README.md
+└── LICENSE
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+### Setup Instructions
+
+#### C++ Environment Setup
+1. **Install Boost and Eigen**:
+   - Boost: [Boost Installation Guide](https://www.boost.org/doc/libs/1_75_0/more/getting_started/unix-variants.html)
+   - Eigen: [Eigen Installation Guide](https://eigen.tuxfamily.org/dox/GettingStarted.html)
+
+2. **Compile the C++ Code**:
+   ```bash
+   cd src
+   mkdir build
+   cd build
+   cmake ..
+   make
+   ./data_preprocessing
+   ```
