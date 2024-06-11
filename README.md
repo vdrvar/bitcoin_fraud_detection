@@ -43,6 +43,7 @@ bitcoin_fraud_detection/
 │
 ├── README.md
 └── LICENSE
+```
 
 ### Setup Instructions
 
