@@ -1,0 +1,22 @@
+# Ignore unfiltered data
+data/unfiltered/
+
+# Ignore build directory
+src/build/
+
+# Ignore compiled binaries
+*.o
+*.out
+*.exe
+
+# Ignore other common unwanted files
+*.log
+*.tmp
+*.swp
+
+# Python specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
