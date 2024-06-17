@@ -1,2 +1,4 @@
 data/filtered/filtered_features.csv filter=lfs diff=lfs merge=lfs -text
 data/unfiltered/elliptic_txs_features.csv filter=lfs diff=lfs merge=lfs -text
+data/splits/* filter=lfs diff=lfs merge=lfs -text
+data/splits/training_features.csv filter=lfs diff=lfs merge=lfs -text

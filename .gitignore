@@ -1,5 +1,6 @@
 # Ignore unfiltered data
 data/unfiltered/
+data/splits
 
 # Ignore build directory
 src/build/
