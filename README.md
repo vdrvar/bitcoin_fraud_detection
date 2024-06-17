@@ -41,6 +41,8 @@ bitcoin_fraud_detection/
 ├── README.md
 └── LICENSE
 ```
+![newplot](https://github.com/vdrvar/bitcoin_fraud_detection/assets/48907543/ef91b574-3b16-4206-bd07-692a6b816750)
+
 
 ### Setup Instructions
 
