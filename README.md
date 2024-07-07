@@ -65,7 +65,7 @@ bitcoin_fraud_detection/
    ```bash
    cd training
    pip install -r requirements.txt
-
+   ```
 
 2. **Required Libraries**:
    - torch
