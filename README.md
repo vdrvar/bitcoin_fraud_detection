@@ -1,9 +1,10 @@
-# Fraud Detection in Bitcoin Transactions using Graph Neural Networks
+# Fraud Detection in Bitcoin Transactions using Convolutional Networks (GCNs)
 
 ---
 
 ### **Project Description**
-`bitcoin_fraud_detection` is a project aimed at detecting fraudulent Bitcoin transactions using Graph Neural Networks (GNNs). The project leverages the Elliptic dataset and combines the strengths of C++ for data preprocessing and Python for implementing and training the GNN model. This hybrid approach ensures efficient data handling and powerful machine learning capabilities.
+`bitcoin_fraud_detection` is a project aimed at detecting fraudulent Bitcoin transactions using Graph Convolutional Networks (GCNs). The project leverages the Elliptic dataset and combines the strengths of C++ for data preprocessing and Python for implementing and training the GCN model. This hybrid approach ensures efficient data handling and powerful machine learning capabilities.
+
 
 ---
 
