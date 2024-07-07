@@ -89,4 +89,13 @@ cd src/build
 
 This will generate filtered datasets in the `data/filtered/` and `data/unfiltered/` directory.
 
+#### 2. Training the GNN Model (Python):
+Navigate to the `training` directory and run the `training.ipynb` notebook.
+```bash
+cd training
+jupyter notebook training.ipynb
+```
+
+This will train the GNN model and save the model weights to `gcn_model_weights.pth`.
+
 
