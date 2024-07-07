@@ -113,3 +113,20 @@ jupyter notebook data_visualization.ipynb
 #### Data Predictions Plot
 ![Data Predictions Plot](visualization/data_predictions_plot.png)
 
+### **Usage**
+
+- **Training**: The GNN model can be trained using the `training.ipynb` notebook. Adjust hyperparameters as needed within the notebook.
+- **Visualization**: Use the `data_visualization.ipynb` notebook to generate visualizations of the transaction graph and model performance metrics.
+
+### **License**
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### **Contributing**
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
+
+### **Acknowledgments**
+- The Elliptic dataset: [Kaggle](https://www.kaggle.com/ellipticco/elliptic-data-set)
+- PyTorch Geometric: [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/)
+
+### **Contact**
+For any questions or suggestions, please open an issue or contact the project maintainers.
