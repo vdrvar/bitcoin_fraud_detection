@@ -47,3 +47,23 @@ bitcoin_fraud_detection/
 ├── README.md
 └── LICENSE
 ```
+
+### **Setup Instructions**
+
+#### C++ Environment Setup
+1. **Compile the C++ Code**:
+   ```bash
+   cd src
+   mkdir build
+   cd build
+   cmake ..
+   make
+   ./data_preprocessing
+  ```
+
+#### Python Environment Setup
+1. **Install Python Dependencies**:
+   ```bash
+   cd training
+   pip install -r requirements.txt
+  ```
