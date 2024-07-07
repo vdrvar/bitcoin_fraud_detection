@@ -87,6 +87,6 @@ cd src/build
 ./data_preprocessing
 ```
 
-This will generate filtered datasets in the ´data/filtered/´ directory.
+This will generate filtered datasets in the `data/filtered/` and `data/unfiltered/` directory.
 
 
