@@ -65,4 +65,28 @@ bitcoin_fraud_detection/
    ```bash
    cd training
    pip install -r requirements.txt
-  ```
+
+
+2. **Required Libraries**:
+   - torch
+   - torch-geometric
+   - pandas
+   - matplotlib
+   - scipy
+   - networkx
+   - plotly
+  
+---
+
+### **Running the Project**
+
+#### 1. Data Preprocessing (C++):
+Navigate to the `src` directory and run the data preprocessing script.
+```bash
+cd src/build
+./data_preprocessing
+```
+
+This will generate filtered datasets in the ´data/filtered/´ directory.
+
+
