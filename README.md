@@ -98,4 +98,18 @@ jupyter notebook training.ipynb
 
 This will train the GNN model and save the model weights to `gcn_model_weights.pth`.
 
+#### 3. Visualizing the Results (Python):
+Navigate to the `visualization` directory and run the `data_visualization.ipynb` notebook.
+```bash
+cd visualization
+jupyter notebook data_visualization.ipynb
+```
+
+### **Visualizations**
+
+#### Data Plot
+![Data Plot](visualization/data_plot.png)
+
+#### Data Predictions Plot
+![Data Predictions Plot](visualization/data_predictions_plot.png)
 
