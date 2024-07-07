@@ -58,8 +58,7 @@ bitcoin_fraud_detection/
    cd build
    cmake ..
    make
-   ./data_preprocessing
-  ```
+   ./data_preprocessing  
 
 #### Python Environment Setup
 1. **Install Python Dependencies**:
