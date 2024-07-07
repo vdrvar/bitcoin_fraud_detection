@@ -1,4 +1,4 @@
-# Fraud Detection in Bitcoin Transactions using Convolutional Networks (GCNs)
+# Fraud Detection in Bitcoin Transactions using Graph Convolutional Networks (GCNs)
 
 ---
 
