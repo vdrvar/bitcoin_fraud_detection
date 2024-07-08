@@ -119,37 +119,7 @@ jupyter notebook data_visualization.ipynb
 - **Training**: The GNN model can be trained using the `training.ipynb` notebook. Adjust hyperparameters as needed within the notebook.
 - **Visualization**: Use the `data_visualization.ipynb` notebook to generate visualizations of the transaction graph and model performance metrics.
 
-### Aggregation Process
-
-Each node's feature vector is updated based on its own features and the features of its direct neighbors. This can be summarized as follows:
-
-#### First GCN Layer
-
-Each node \( v \) aggregates features from its direct neighbors \( \mathcal{N}(v) \).
-
-**New features for node \( v \):**
-\[ 
-\mathbf{h}_v^{(1)} = \sigma \left( \mathbf{W}_0 \mathbf{x}_v + \sum_{u \in \mathcal{N}(v)} \mathbf{W}_1 \mathbf{x}_u \right) 
-\]
-
-- **\(\mathbf{h}_v^{(1)}\)**: Updated feature vector for node \( v \) after the first layer.
-- **\(\mathbf{x}_v\)**: Original feature vector of node \( v \).
-- **\(\mathbf{W}_0\) and \(\mathbf{W}_1\)**: Learnable weight matrices.
-- **\(\sigma\)**: Activation function (e.g., ReLU).
-
-#### Second GCN Layer
-
-Each node \( v \) again aggregates features from its direct neighbors, but now these features include the aggregated information from the first layer.
-
-**New features for node \( v \):**
-\[ 
-\mathbf{h}_v^{(2)} = \sigma \left( \mathbf{W}_2 \mathbf{h}_v^{(1)} + \sum_{u \in \mathcal{N}(v)} \mathbf{W}_3 \mathbf{h}_u^{(1)} \right) 
-\]
-
-- **\(\mathbf{h}_v^{(2)}\)**: Updated feature vector for node \( v \) after the second layer.
-- **\(\mathbf{W}_2\) and \(\mathbf{W}_3\)**: Learnable weight matrices for the second layer.
-
-### Conclusion
+### **Conclusion**
 
 In this model, each node aggregates information from its first-order neighbors in both GCN layers. Although the second GCN layer also considers first-order neighbors, these neighbors' features have already been influenced by their own neighbors in the previous layer. This way, each node indirectly incorporates second-order neighbor information as well. However, the direct aggregation occurs only from first-order neighbors in each GCN layer.
 
