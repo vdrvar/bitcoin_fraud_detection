@@ -88,7 +88,7 @@ cd src/build
 ./data_preprocessing
 ```
 
-This will generate filtered datasets in the `data/filtered/` and `data/unfiltered/` directory.
+This will generate filtered datasets in the `data/filtered/` directory using the `data/unfiltered/` directory. You might need to manually paste the data from Kaggle to `data/unfiltered/`, due to size limitations on Github.
 
 #### 2. Training the GNN Model (Python):
 Navigate to the `training` directory and run the `training.ipynb` notebook.
